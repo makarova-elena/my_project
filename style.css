@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #f0f2f5;
+    color: #1a2a3a;
+    line-height: 1.5;
+    padding: 3rem 1.5rem;
+}
+
+/* контейнер */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px -10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* header */
+.header {
+    background: #ffffff;
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    font-weight: 550;
+    letter-spacing: -0.01em;
+    background: linear-gradient(135deg, #1a2a3a, #2c5a7a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.header .sub {
+    color: #5a6e7c;
+    font-size: 0.95rem;
+    margin-top: 0.2rem;
+}
+
+/* меню */
+.nav {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem 2.5rem;
+    background: #fafcfd;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.nav a {
+    color: #2c5a7a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav a:hover {
+    color: #1a3a4a;
+    border-bottom-color: #2c5a7a;
+}
+
+/* секции */
+.section {
+    padding: 1.8rem 2.5rem;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.section:last-of-type {
+    border-bottom: none;
+}
+
+.section h2 {
+    font-size: 1.3rem;
+    font-weight: 550;
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.01em;
+    color: #1a2a3a;
+    position: relative;
+    padding-left: 0.75rem;
+    border-left: 3px solid #2c5a7a;
+}
+
+/* сетка навыков (flex) */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.skill-card {
+    flex: 1;
+    min-width: 180px;
+    background: #f8fafc;
+    padding: 1.25rem 1.25rem;
+    border-radius: 16px;
+    border: 1px solid #e6edf2;
+    transition: all 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    border-color: #cbdde6;
+    box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    color: #1a4a6a;
+}
+
+.skill-card p {
+    font-size: 0.85rem;
+    color: #4a5e6c;
+    line-height: 1.45;
+}
+
+/* таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #e2e8f0;
+    padding: 0.85rem 1rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #f1f5f9;
+    font-weight: 550;
+    width: 32%;
+    color: #1a3a4a;
+}
+
+tr:hover td {
+    background: #fafcfd;
+}
+
+/* форма */
+.contact-form {
+    margin: 1rem 0 1rem 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+input {
+    flex: 1;
+    min-width: 220px;
+    padding: 0.7rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    background: #ffffff;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2c5a7a;
+    box-shadow: 0 0 0 3px rgba(44, 90, 122, 0.1);
+}
+
+button {
+    background: #2c5a7a;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.6rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #1a3a4a;
+    transform: scale(0.97);
+}
+
+.form-note {
+    font-size: 0.7rem;
+    color: #7a8e9c;
+    margin-top: 0.6rem;
+}
+
+.contact-info {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #e2e8f0;
+    font-size: 0.9rem;
+}
+
+.contact-info p {
+    margin: 0.3rem 0;
+    color: #2c5a7a;
+}
+
+/* подвал */
+.footer {
+    background: #f8fafc;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 1px solid #eef2f6;
+    font-size: 0.8rem;
+    color: #6a7e8c;
+}
+
+.footer p {
+    margin: 0.2rem 0;
+}
+
+/* адаптив */
+@media (max-width: 700px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .section {
+        padding: 1.5rem;
+    }
+    
+    .nav {
+        padding: 0.8rem 1.5rem;
+        gap: 1.2rem;
+    }
+}
